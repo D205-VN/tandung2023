@@ -14,7 +14,7 @@ function animateLine() {
       line.style.display = "none"; // Ẩn đường thẳng khi transition kết thúc
       startLabel.style.display = "none";
       endLabel.style.display = "none";
-      window.location.href = 'index1.html';
+      window.location.href = 'Trangchinh.html';
     }
   });
   line.style.transform = "translateX(0%)"; // Di chuyển đường thẳng từ phải sang trái
