@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h2>Đánh giá sản phẩm</h2>
+    <div class="rating">
+        <span class="star" onmouseover="highlightStar(this)" onmouseout="resetStars()" onclick="selectStar(this)"></span>
+        <span class="star" onmouseover="highlightStar(this)" onmouseout="resetStars()" onclick="selectStar(this)"></span>
+        <span class="star" onmouseover="highlightStar(this)" onmouseout="resetStars()" onclick="selectStar(this)"></span>
+        <span class="star" onmouseover="highlightStar(this)" onmouseout="resetStars()" onclick="selectStar(this)"></span>
+        <span class="star" onmouseover="highlightStar(this)" onmouseout="resetStars()" onclick="selectStar(this)"></span>
+    </div>
+    <button onclick="test()">Đánh giá</button>
+    <script>
+        var test = function(){
+            alert("Cảm ơn bạn đã đánh giá")
+            window.location.href = 'index1.html'
+        }
+    </script>
+
+    <script src="Danhgia.js"></script>
+</body>
+</html>

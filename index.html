@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Animation Đường thẳng load web từ trái sang</title>
+  <style>
+    /* Chỉnh kích thước và màu sắc cho đường thẳng */
+    #line {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 8px;
+      background-color: gray;
+      z-index: 9999;
+      transition: transform 5s; /* Thêm transition cho thuộc tính transform */
+      transform: translateX(-100%); /* Đẩy đường thẳng sang trái ngoài khung web */
+      transform-origin: left center; /* Điểm xuất phát của đường thẳng */
+    }
+
+    #container{
+      top: 35ch;
+      width: 70%;
+      height: 200px;
+      position: relative;
+      overflow: hidden;
+      left: 24ch;
+    }
+
+    #line img{
+        position: absolute;
+        top: -40px;
+        left: 96%;
+        width: 50px; /* Độ rộng biểu tượng */
+        height: 50px; /* Chiều cao biểu tượng */
+        border-radius: 50%;
+        transform: translate(-5%, -100%); /* Đưa biểu tượng vào giữa đường thẳng */
+        animation: moveIcon 2.5s ease-in-out infinite; /* Áp dụng animation cho biểu tượng */
+    }
+    /****   Tuyet roi   *****/
+    body {
+      overflow: hidden;
+      background-color: bisque;
+    }
+
+    .snowflake {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: white;
+      border-radius: 50%;
+      pointer-events: none;
+      animation: snowfall linear infinite;
+    }
+    @keyframes snowfall {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+    }
+    /************************/
+
+    @media screen and (max-width: 1300px) {
+      #line {
+        position: absolute;
+        top: 40%;
+        left: 0;
+        width: 100%;
+        height: 20px;
+        background-color: gray;
+        z-index: 9999;
+        transition: transform 5s; /* Thêm transition cho thuộc tính transform */
+        transform: translateX(-100%); /* Đẩy đường thẳng sang trái ngoài khung web */
+        transform-origin: left center; /* Điểm xuất phát của đường thẳng */
+      }
+
+      #container{
+        top: 150ch;
+        width: 70%;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+        left: 24ch;
+      }
+
+      #line img {
+        top: -70px;
+        width: 100px;
+        height: 100px;
+        left: 92%;
+      }
+
+      @keyframes moveIcon {
+        0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+        }
+        100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+        }
+      }
+
+      #start-label,
+      #end-label {
+        position: absolute;
+        transform: translate(-50%, -50%);
+      }
+
+      #start-label {
+        margin-top: 60px;
+        margin-left: 10px;
+        font-size: 50px;
+      }
+
+      #end-label {
+        right: -10px;
+        font-size: 50px;
+        margin-top: 60px;
+      }
+
+      .snowflake {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        border-radius: 50%;
+        pointer-events: none;
+        animation: snowfall linear infinite;
+      }
+    }
+
+    /**************/
+
+    @keyframes moveIcon {
+        0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+        }
+        100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+        }
+    }
+
+    #start-label,
+    #end-label {
+      position: absolute;
+      top: 130px;
+      transform: translate(-50%, -50%);
+    }
+
+    #start-label {
+      left: 10px;
+    }
+
+    #end-label {
+      right: -10px;
+    }
+    
+    
+  </style>
+</head>
+<body>
+    <div id="snow-container"></div>
+    <div id="container">
+        <div id="start-label"><h2>0</h2></div>
+        <div id="end-label"><h2>100</h2></div>
+        <div id="line">
+            <img src="ANH/Picture2.png">
+        </div>
+    </div>
+    
+
+  <script src="script.js"></script>
+</body>
+</html>

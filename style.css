@@ -1,0 +1,242 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header{
+    background-color: rgb(122, 122, 122);
+    color: whitesmoke;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+main{
+    overflow-y: auto;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(122, 122, 122);
+    height: 0 auto;
+    padding: 1px;
+
+}
+
+.container{
+    overflow: auto;
+    position: relative;
+    padding-bottom: 78px;
+}
+
+/*                     */
+
+#BTrai{
+    width: 30%;
+    margin-top: 90px;
+    height: 687px;
+    background-color: rgb(11, 11, 11);
+    float: left;
+    text-align: center;
+    color: rgb(186, 182, 182);
+    position: fixed;
+    
+}
+
+#BTrai img{
+    width: 140px;
+    padding-top: 20px;
+}
+
+#BTrai #item a{
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(186, 182, 182);
+    display: block;
+}
+
+/*             */ 
+
+.BPhai{
+    
+    margin-top: 110px;
+    width: 70%;
+    height: 650px;
+    float: right;
+    text-align: center;
+
+}
+
+.Khoangtrang p{
+    padding: 10px;
+    background-color: bisque;
+}
+
+.BPhai p{
+    font-size: 25px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    padding: 20px;
+}
+
+/*                            */
+#item a:hover {
+    color: white;
+    text-shadow: 0 0 20px white;
+    font-size: 30px;
+}
+
+.info{
+    height: 40%;
+    font-size: 20px;
+}
+
+.info p{
+    font-size: 40px;
+}
+
+#item{
+    height: 60%;
+    padding-top: 60px;
+}
+
+.highlight a{
+    color: white;
+    text-shadow: 0 0 20px white;
+    font-size: 30px;
+}
+
+#image{
+    margin-top: 60px;
+}
+
+
+@media screen and (max-width: 375px){
+    main {
+        scroll-padding-top: 100px; /* Đặt khoảng trống bằng chiều cao của header */
+    }
+    header{
+        font-size: 12.3px;
+    }
+
+    footer{
+        font-size: 10px;
+    }
+    /*     */
+    #BTrai{
+        width: 40%;
+        margin-top: 19%;
+        height: 100%;
+        background-color: rgb(11, 11, 11);
+        float: left;
+        text-align: center;
+        color: rgb(186, 182, 182);
+        position: fixed;
+        
+    }
+    
+    #BTrai img{
+        width: 100px;
+        padding-top: 20px;
+    }
+    
+    #BTrai #item a{
+        padding: 20px;
+        text-decoration: none;
+        color: rgb(186, 182, 182);
+        display: block;
+    }
+
+    /*       */
+
+    .info{
+        height: 30%;
+        font-size: 10px;
+    }
+    
+    .info p{
+        font-size: 20px;
+    }
+
+    #item{
+        height: 60%;
+        font-size: 20px;
+    }
+
+    #item a:hover {
+        color: white;
+        text-shadow: 0 0 20px white;
+        font-size: 25px;
+    }
+
+    .highlight a{
+        color: white;
+        text-shadow: 0 0 20px white;
+        font-size: 25;
+    }
+
+    /*             */ 
+
+    .BPhai{
+        margin-top: 30%;
+        width: 100%;
+        height: 100%;
+        float: right;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .Khoangtrang p{
+        padding: 10px;
+        background-color: bisque;
+        height: 100px;
+    }
+
+    .BPhai p{
+        font-size: 20px;
+        padding: 10px;
+        margin-top: 30px;
+    }
+
+    /*  */
+
+    .menu-button {
+        position: fixed;
+        right: 20px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        width: 40px;
+        height: 10px;
+        cursor: pointer;
+        z-index: 9999;
+        top: 20px;
+      }
+      
+    .bar {
+        width: 100%;
+        padding-top: 20%;
+        height: auto;
+        background-color: #000;
+        margin-bottom: 5px;
+        
+        transform-origin: center center;
+        transition: transform 0.3s ease-in-out;
+    }
+      
+    
+      
+    .hidden {
+        display: none;
+    }
+      
+    .visible {
+        display: block;
+    }
+}
