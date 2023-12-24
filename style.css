@@ -117,7 +117,7 @@ footer{
 }
 
 
-@media screen and (max-width: 414px) and (min-height: 896px){
+@media screen and (max-width: 420px) and (min-height: 695px){
     main {
         scroll-padding-top: 100px; /* Đặt khoảng trống bằng chiều cao của header */
     }
@@ -131,7 +131,7 @@ footer{
     /*     */
     #BTrai{
         width: 40%;
-        margin-top: 17%;
+        margin-top: 16.8%;
         height: 100%;
         background-color: rgb(11, 11, 11);
         float: left;
