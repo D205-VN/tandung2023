@@ -117,7 +117,7 @@ footer{
 }
 
 
-@media screen and (max-width: 412px) and (min-height: 850px){
+@media screen and (max-width: 414px) and (min-height: 896px){
     main {
         scroll-padding-top: 100px; /* Đặt khoảng trống bằng chiều cao của header */
     }
