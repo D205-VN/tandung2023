@@ -28,7 +28,7 @@ button {
 }
 
 /*********/
-@media screen and (max-width: 420px) and (min-height: 695px){
+@media screen and (max-width: 600px){
   body{
     text-align: center;
     padding-top: 50%;
