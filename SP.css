@@ -58,7 +58,7 @@
 }
 
 /*      */
-@media screen and (max-width: 375px){
+@media screen and (max-width: 420px) and (min-height: 695px){
     .file-input-container {
         display: inline-block;
         overflow: hidden;
